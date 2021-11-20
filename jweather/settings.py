@@ -19,7 +19,7 @@ environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -141,4 +141,5 @@ CLIENT_SECRET_KEY_UPSPLASH = env('CLIENT_SECRET_KEY_UPSPLASH')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://vibrant-hodgkin-629122.netlify.app/",
 ]
